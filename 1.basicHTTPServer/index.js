@@ -13,6 +13,7 @@ const server = http.createServer(async (req, res)=>{
         res.end("GET Request received!!");
     }
     else if(req.method=="POST"){
+        res.writeHead(201);
         res.end("POST Request received!!");
     }
     else if(req.method=="PUT"){
